@@ -6,7 +6,7 @@ from typing import Callable, Coroutine, Dict, List, Tuple, Union
 from callsmusic import callsmusic, queues
 from helpers.admins import get_administrators
 from os import path
-import requests
+import requests5
 import aiohttp
 import youtube_dl
 from youtube_search import YoutubeSearch
@@ -406,7 +406,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "@VCPlayRobot"
+        user.first_name =  "@GraceMusicAsst"
     usar = user
     wew = usar.id
     try:
@@ -427,7 +427,7 @@ async def play(_, message: Message):
                               await USER.join_chat(invitelink)
                               await USER.send_message(message.chat.id,"I joined this group for playing music in VC")
                               await lel.edit(
-                                  "<b>@VCPlayRobot userbot joined your chat</b>",
+                                  "<b>@GraceMusicAsst userbot joined your chat</b>",
                               )
 
                           except UserAlreadyParticipant:
@@ -436,7 +436,7 @@ async def play(_, message: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add @VCPlayRoBot to your Group and try again</b>",
+                                  "\n\nOr manually add @GraceMusicAsst to your Group and try again</b>",
                               )
                               pass
     try:
@@ -444,7 +444,7 @@ async def play(_, message: Message):
         #lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i> @VCPlayRobot Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
+            f"<i> @GraceMusicAsst Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
         )
         return     
     sender_id = message.from_user.id
@@ -533,7 +533,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="✯𝗩𝗖𝗣𝗹𝗮𝘆✯▶️ **Playing** here the song requested by {} 😜".format(
+        caption="✯𝙂𝙧𝙖𝙘𝙚𝙈𝙪𝙨𝙞𝙘𝘽𝙤𝙩✯▶️ **Playing** here the song requested by {} 😜".format(
         message.from_user.mention()
         ),
     )
@@ -554,7 +554,7 @@ async def deezer(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "VCPlayBot"
+        user.first_name =  "GraceMusicBot"
     usar = user
     wew = usar.id
     try:
@@ -575,7 +575,7 @@ async def deezer(client: Client, message_: Message):
                               await USER.join_chat(invitelink)
                               await USER.send_message(message_.chat.id,"I joined this group for playing music in VC")
                               await lel.edit(
-                                  "<b>@VCPlayRoBot userbot joined your chat</b>",
+                                  "<b>@GraceMusicAsst userbot joined your chat</b>",
                               )
 
                           except UserAlreadyParticipant:
@@ -584,7 +584,7 @@ async def deezer(client: Client, message_: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add @VCPlayRoBot to your Group and try again</b>",
+                                  "\n\nOr manually add @GraceMusicAsst to your Group and try again</b>",
                               )
                               pass
     try:
@@ -592,7 +592,7 @@ async def deezer(client: Client, message_: Message):
         #lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i>Looks like @VCPlayRoBot Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
+            f"<i>Looks like @GraceMusicAsst Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
         )
         return                            
     requested_by = message_.from_user.first_name   
@@ -647,9 +647,9 @@ async def deezer(client: Client, message_: Message):
         loc = file_path
         appendable = [s_name, r_by, loc]
         qeue.append(appendable)
-        await res.edit_text(f"✯𝗩𝗖𝗣𝗹𝗮𝘆✯=#️⃣ Queued at position {position}")
+        await res.edit_text(f"✯𝙂𝙧𝙖𝙘𝙚𝙈𝙪𝙨𝙞𝙘𝘽𝙤𝙩✯=#️⃣ Queued at position {position}")
     else:
-        await res.edit_text("✯𝗩𝗖𝗣𝗹𝗮𝘆✯=▶️ Playing.....")
+        await res.edit_text("✯𝙂𝙧𝙖𝙘𝙚𝙈𝙪𝙨𝙞𝙘𝘽𝙤𝙩✯=▶️ Playing.....")
         chat_id = message_.chat.id
         que[chat_id] = []
         qeue = que.get(message_.chat.id)
@@ -684,7 +684,7 @@ async def jiosaavn(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "VCPlayBot"
+        user.first_name =  "GraceMusicBot"
     usar = user
     wew = usar.id
     try:
@@ -705,7 +705,7 @@ async def jiosaavn(client: Client, message_: Message):
                               await USER.join_chat(invitelink)
                               await USER.send_message(message_.chat.id,"I joined this group for playing music in VC")
                               await lel.edit(
-                                  "<b>@VCPlayRobot helper userbot joined your chat</b>",
+                                  "<b>@GraceMusicAsst helper userbot joined your chat</b>",
                               )
 
                           except UserAlreadyParticipant:
@@ -714,7 +714,7 @@ async def jiosaavn(client: Client, message_: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add @VCPlayRobot to your Group and try again</b>",
+                                  "\n\nOr manually add @GraceMusicAsst to your Group and try again</b>",
                               )
                               pass
     try:
@@ -722,7 +722,7 @@ async def jiosaavn(client: Client, message_: Message):
         #lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            "<i> @VCPlayRobot helper Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
+            "<i> @GraceMusicAsst helper Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
         )
         return     
     requested_by = message_.from_user.first_name
@@ -755,11 +755,6 @@ async def jiosaavn(client: Client, message_: Message):
                InlineKeyboardButton('📖 Playlist', callback_data='playlist'),
                InlineKeyboardButton('Menu ⏯ ', callback_data='menu')   
              ],                     
-             [
-               InlineKeyboardButton(
-                   text="Join Updates Channel",
-                   url='https://t.me/LaylaList')
-             ],
              [       
                InlineKeyboardButton(
                    text="❌ Close",
@@ -782,12 +777,12 @@ async def jiosaavn(client: Client, message_: Message):
             chat_id=message_.chat.id,
             reply_markup=keyboard,
             photo="final.png",
-            caption=f"✯𝗩𝗖𝗣𝗹𝗮𝘆✯=#️⃣ Queued at position {position}",
+            caption=f"✯𝙂𝙧𝙖𝙘𝙚𝙈𝙪𝙨𝙞𝙘𝘽𝙤𝙩✯=#️⃣ Queued at position {position}",
         
         )           
            
     else:
-        await res.edit_text("✯𝗩𝗖𝗣𝗹𝗮𝘆✯=▶️ Playing.....")
+        await res.edit_text("✯𝙂𝙧𝙖𝙘𝙚𝙈𝙪𝙨𝙞𝙘𝘽𝙤𝙩✯=▶️ Playing.....")
         chat_id = message_.chat.id
         que[chat_id] = []
         qeue = que.get(message_.chat.id)
