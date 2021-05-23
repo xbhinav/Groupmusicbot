@@ -24,7 +24,7 @@ Maintained by @Surv_ivor❤
             [
                 [
                     InlineKeyboardButton(
-                        "📍 Help", url="url="t.me/GraceMusicBot?start=help"
+                        "📍 Help", url="t.me/GraceMusicBot?start=help"
                     )
                 ],
                 [
