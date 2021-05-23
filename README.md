@@ -1,3 +1,6 @@
+# GraceMusicBot
+https://telegra.ph/file/79e40e459760b8e4ee41b.jpg
+
 # How To Host
 The easiest way to deploy this Bot
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Sur-vivor/GraceMusicBot"> <img src="https://www.herokucdn.com/deploy/button.svg" width="220" height="38.45"/></a></p>
