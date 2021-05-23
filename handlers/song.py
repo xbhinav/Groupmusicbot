@@ -33,7 +33,7 @@ def song(client, message):
         query += ' ' + str(i)
     okvai = query.capitalize()
     print(query.capitalize())
-    m = await message.reply(f"🔍 Searching for {okvai}...")
+    m = message.reply(f"🔍 Searching for {okvai}...")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -56,7 +56,7 @@ def song(client, message):
         )
         print(str(e))
         return
-    await m.edit(f"📥 Downloading...\n**Query :-** {query}")
+    m.edit(f"📥 Downloading...\n**Query :-** {query}")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -67,7 +67,7 @@ def song(client, message):
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
-        message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur,quote=False)
+        message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur)
         m.delete()
     except Exception as e:
         m.edit('❌ Error')
