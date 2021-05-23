@@ -31,9 +31,8 @@ def song(client, message):
     query = ''
     for i in message.command[1:]:
         query += ' ' + str(i)
-    okvai = query.capitalize()
-    print(query.capitalize())
-    m = message.reply(f"🔍 Searching for {okvai}...")
+    print(query)
+    m = message.reply("🔎 `Finding the song...`")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -56,7 +55,7 @@ def song(client, message):
         )
         print(str(e))
         return
-    m.edit(f"📥 Downloading...\n**Query :-** {query}")
+    m.edit("📥`Downloading Song... Please wait ⏱`")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
