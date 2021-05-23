@@ -24,11 +24,6 @@ Maintained by @Surv_ivor❤
             [
                 [
                     InlineKeyboardButton(
-                        "📍 Help", url="t.me/GraceMusicBot?start=help"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
                         "➕ Add To Your Group ➕", url="https://t.me/GraceMusicBot?startgroup=true"                     
                     )
                 ],
