@@ -6,7 +6,7 @@ from typing import Callable, Coroutine, Dict, List, Tuple, Union
 from callsmusic import callsmusic, queues
 from helpers.admins import get_administrators
 from os import path
-import requests5
+import requests
 import aiohttp
 import youtube_dl
 from youtube_search import YoutubeSearch
