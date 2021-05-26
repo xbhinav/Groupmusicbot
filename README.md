@@ -1,6 +1,6 @@
 ### Xachuzz Music Bot
 
-[![Deploy](https://telegra.ph/file/79e40e459760b8e4ee41b.jpg)](https://heroku.com/deploy?template=https://github.com/Sur-vivor/GraceMusicBot.git)
+[![Deploy](https://telegra.ph/file/36f08d908e811e779b1e0.jpg)](https://heroku.com/deploy?template=https://github.com/Sur-vivor/GraceMusicBot.git)
 
 # How To Host
 The easiest way to deploy this Bot
