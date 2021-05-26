@@ -33,7 +33,7 @@ def song(client, message):
         query += ' ' + str(i)
     print(query)
     m = message.reply("🔎 `Finding the song...`")
-    ydl_opts = {"format": "bestaudio[ext=mp3]"}
+    ydl_opts = {"format": "bestaudio[ext=m4a]"}
 
 
 
