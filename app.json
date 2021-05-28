@@ -1,9 +1,9 @@
 {
-    "name": "✯𝙂𝙧𝙖𝙘𝙚𝙈𝙪𝙨𝙞𝙘𝘽𝙤𝙩✯",
+    "name": "GroupMusicBot",
     "logo": "https://telegra.ph/file/b10b087d1ae5c44b8613f.jpg",
     "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
     "keywords": ["music", "voicechat", "telegram"],
-    "repository": "https://github.com/Sur-vivor/GraceMusicBot",
+    "repository": "https://github.com/xbhinav/Groupmusicbot",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
